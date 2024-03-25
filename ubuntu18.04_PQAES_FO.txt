@@ -1,0 +1,58 @@
+    1  setxkbmap fr
+    2  uname -a
+    3  apt update
+    4  apt-get install python3-pip wget
+    5  apt-get install python3-pip
+    6  pip3 install progressbar
+    7  pip3 uninstall numpy
+    8  pip3 install "numpy<1.20.0"
+    9  pip3 install click
+   10  pip3 install progress
+   11  pip3 install sympy
+   12  apt-get install git
+   13  git clone https://github.com/JJChiDguez/sibc
+   14  cd sibc
+   15  python3 setup.py bdist_deb
+   16  sudo python3 setup.py install
+   17  python3 setup.py bdist_deb
+   18  python3 sibc csidh-bench
+   19  python3 setup.py bdist_deb
+   20  sudo pip3 install sibc
+   21  clc
+   22  clear
+   23  wget https://github.com/SitrakaResearchAndPOC/Python_PQAES_FO.git
+   24  ls
+   25  cd ..
+   26  git clone https://github.com/SitrakaResearchAndPOC/Python_PQAES_FO.git
+   27  ls
+   28  cd Python_PQAES_FO/
+   29  ls
+   30  unzip Python-PQAES.zip 
+   31  cd Python-PQAES
+   32  ls
+   33  cd Python-PQAES-CSIDH/
+   34  ls
+   35  python3 AES.py 
+   36  python3 -e test.txt -c 128
+   37  python3 AES.py -e test.txt -c 128
+   38  ls
+   39  python3 AES.py -e test.txt -c 128
+   40  python3 AES.py -d test.txt.aes -c 128
+   41  gedit test_dec.txt 
+   42  tail -f test_dec.txt 
+   43  tail -f test.txt
+   44  clear
+   45  python3 FO.py 
+   46  python3 FO.py -e test.txt -a sha256 -k 1235
+   47  clear
+   48  python3 FO.py 
+   49  ls
+   50  python3 FO.py -e test.txt -a sha256 -k bob.priv 
+   51  ls
+   52  python3 FO.py -d test.txt.fo -a sha256 -k bob.priv 
+   53  tail f test_fo.txt 
+   54  clc
+   55  clear
+   56  ls
+   57  python3 PQAES.py 
+   58  history > ubuntu18.04_PQAES_FO.txt
